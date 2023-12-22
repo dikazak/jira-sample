@@ -1,0 +1,30 @@
+{
+  "name": "Zebrunner (Test)",
+  "key": "com.zebrunner.jira.zebrunner-plugin",
+  "description": "Zebrunner plugin",
+  "baseUrl": "<yourBaseUrl>",
+  "vendor": {
+    "name": "Zebrunner",
+    "url": "https://zebrunner.com"
+  },
+  "enableLicensing": false,
+  "links": {
+    "documentation": "https://zebrunner.com/documentation"
+  },
+  "authentication": {
+    "type": "none"
+  },
+  "apiVersion": 1,
+  "modules": {
+    "webPanels": [
+      {
+        "key": "zebrunner-test-run-cases",
+        "location": "atl.jira.view.issue.left.context",
+        "url": "/static/cloud/issue/test_run_cases.html",
+        "name": {
+          "value": "Test Run Cases"
+        }
+      }
+    ]
+  }
+}

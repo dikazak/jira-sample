@@ -1,0 +1,20 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+
+        <param name="plugin-icon">static/images/logo.jpeg</param>
+        <param name="plugin-logo">static/images/logo.jpeg</param>
+    </plugin-info>
+
+    <web-panel name="Zebrunner Test Run" key="zebrunner-test-run" location="atl.jira.view.issue.left.context" weight="1000">
+
+        <label key="Zebrunner Test Run"/>
+        <resource type="velocity" name="view" location="static/issue/main.vm"/>
+        <context-provider class="com.zebrunner.app.JiraIssueContextProvider"/>
+
+    </web-panel>
+
+</atlassian-plugin>
